@@ -24,6 +24,7 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(Eigen3 REQUIRED)  # 行列計算
 # find_package(nlohmann_json REQUIRED)  # jsonファイルの取り扱い
 find_package(ament_index_cpp REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
 
 
 # find_library(PIGPIO_LIB pigpio)
@@ -32,6 +33,11 @@ find_package(ament_index_cpp REQUIRED)
 # Add Serialbridge
 set(SERIAL_BRIDGE_DIR "${CMAKE_SOURCE_DIR}/SerialBridge")
 find_library(SERIAL_BRIDGE_LIB NAMES SerialBridge PATHS "${SERIAL_BRIDGE_DIR}/bin")
+
+###############
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "include/ArmData.msg"
+)
 
 ###############
 # include custom header files
@@ -50,6 +56,9 @@ foreach(node ${node_list})
   # src/SignalControl.cpp
   # include/TrapezoidalAcc/trapezoidal_acc.cpp
   )
+  
+  ament_export_dependencies(rosidl_default_runtime)
+  
   ament_target_dependencies(${node} rclcpp std_msgs sensor_msgs geometry_msgs ament_index_cpp)
   target_include_directories(${node} PRIVATE
     "${SERIAL_BRIDGE_DIR}/src"
