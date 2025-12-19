@@ -1,0 +1,49 @@
+[0.012s] Invoking command in '/home/minimechatech/ros2_ws/src/robocon2025_a/build/robocon2025_a': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/minimechatech/ros2_ws/src/robocon2025_a -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/minimechatech/ros2_ws/src/robocon2025_a/install/robocon2025_a
+[0.138s] -- The C compiler identification is GNU 13.3.0
+[0.209s] -- The CXX compiler identification is GNU 13.3.0
+[0.232s] -- Detecting C compiler ABI info
+[0.338s] -- Detecting C compiler ABI info - done
+[0.352s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.353s] -- Detecting C compile features
+[0.354s] -- Detecting C compile features - done
+[0.365s] -- Detecting CXX compiler ABI info
+[0.482s] -- Detecting CXX compiler ABI info - done
+[0.498s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.498s] -- Detecting CXX compile features
+[0.499s] -- Detecting CXX compile features - done
+[0.505s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.700s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.849s] -- Found rclcpp: 28.1.13 (/opt/ros/jazzy/share/rclcpp/cmake)
+[0.913s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.933s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.960s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.991s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.125s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[1.129s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[1.231s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[1.258s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[1.288s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.417s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[1.443s] -- Found sensor_msgs: 5.3.6 (/opt/ros/jazzy/share/sensor_msgs/cmake)
+[1.518s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.539s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.551s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[1.703s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[1.703s] -- Configured cppcheck include dirs: /home/minimechatech/ros2_ws/src/robocon2025_a/include;/home/minimechatech/ros2_ws/src/robocon2025_a/include/robocon2025_a;/home/minimechatech/ros2_ws/src/robocon2025_a/SerialBridge/src;/home/minimechatech/ros2_ws/src/robocon2025_a/nlohmann_json::nlohmann_json
+[1.704s] -- Configured cppcheck exclude dirs and/or files: 
+[1.710s] -- Added test 'lint_cmake' to check CMake code style
+[1.726s] -- Added test 'uncrustify' to check C / C++ code style
+[1.727s] -- Configured uncrustify additional arguments: 
+[1.729s] -- Added test 'xmllint' to check XML markup files
+[1.731s] -- Configuring done (1.7s)
+[1.771s] [31mCMake Error at CMakeLists.txt:54 (target_include_directories):
+[1.771s]   Error evaluating generator expression:
+[1.771s] 
+[1.771s]     $<TARGET_PROPERTY:Eigen3::Eigen,INTERFACE_INCLUDE_DIRECTORIES>
+[1.771s] 
+[1.771s]   Target "Eigen3::Eigen" not found.
+[1.771s] 
+[1.771s] [0m
+[1.864s] -- Generating done (0.1s)
+[1.866s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[1.878s] Invoked command in '/home/minimechatech/ros2_ws/src/robocon2025_a/build/robocon2025_a' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/minimechatech/ros2_ws/src/robocon2025_a -DCMAKE_EXPORT_COMPILE_COMMANDS=ON -DCMAKE_INSTALL_PREFIX=/home/minimechatech/ros2_ws/src/robocon2025_a/install/robocon2025_a

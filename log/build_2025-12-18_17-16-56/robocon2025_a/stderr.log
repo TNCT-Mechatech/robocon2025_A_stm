@@ -1,0 +1,9 @@
+[31mCMake Error at CMakeLists.txt:54 (target_include_directories):
+  Error evaluating generator expression:
+
+    $<TARGET_PROPERTY:Eigen3::Eigen,INTERFACE_INCLUDE_DIRECTORIES>
+
+  Target "Eigen3::Eigen" not found.
+
+[0m
+[0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
